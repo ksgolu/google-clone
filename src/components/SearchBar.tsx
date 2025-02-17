@@ -4,7 +4,7 @@ import { FaMicrophone } from 'react-icons/fa';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { generateQuery } from '@/shared';
-import Image from 'next/image';
+
 export default function SearchBar() {
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -49,7 +49,7 @@ export default function SearchBar() {
         <input
           onChange={(e) => setInput(e.target.value)}
           type="text"
-          className="flex-grow focus:outline-none"
+          className="flex-grow focus:outline-none dark:bg-gray-100"
           placeholder="Search google or type URL"
         />
         <FaMicrophone className="text-xl text-gray-500 ml-3" />
