@@ -30,4 +30,7 @@ body {
   .footerList {
     @apply flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6 items-center;
   }
+  .header-icon {
+    @apply bg-transparent hover:bg-gray-200 p-2 text-4xl rounded-full cursor-pointer;
+  }
 }
