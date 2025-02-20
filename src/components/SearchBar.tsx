@@ -14,7 +14,7 @@ export default function SearchBar() {
     const query = generateQuery({
       searchTerm: input.trim(),
     });
-    router.push(`/search/web?${query}`);
+    router.push(`/search/web${query}`);
   };
 
   const handleSubmit = (e: Event): void => {
